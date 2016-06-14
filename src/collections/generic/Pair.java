@@ -1,4 +1,4 @@
-package generic;
+package collections.generic;
 
 public class Pair<T1, T2> {
 

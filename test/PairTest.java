@@ -1,4 +1,4 @@
-import generic.Pair;
+import collections.generic.Pair;
 
 public class PairTest {
 
