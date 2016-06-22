@@ -6,13 +6,13 @@ import java.util.ListIterator;
 
 public class Main {
 	public static void main(String[] args) {
-		String palStr = "abcba";
-		List<Character> palindrome = new LinkedList<Character>();
-		for (char ch : palStr.toCharArray()) {
-			palindrome.add(ch);
-			System.out.println("Input string is: " + palStr);
-			ListIterator<Character> iterator = palindrome.listIterator();
-			ListIterator<Character> revIterator = palindrome.listIterator(palindrome.size());
+		String word = "Word";
+		List<Character> words = new LinkedList<Character>();
+		for (char ch : word.toCharArray()) {
+			words.add(ch);
+			System.out.println("Input string is: " + word);
+			ListIterator<Character> iterator = words.listIterator();
+			ListIterator<Character> revIterator = words.listIterator(words.size());
 			boolean result = true;
 			while (revIterator.hasPrevious() && iterator.hasNext()) {
 				if (iterator.next() != revIterator.previous()) {
@@ -21,9 +21,9 @@ public class Main {
 				}
 			}
 			if (result)
-				System.out.print("Input string is a palindrome");
+				System.out.print("Input string is something.. \n");
 			else
-				System.out.print("Input string is not a palindrome");
+				System.out.print("Input string is something.. \n");
 		}
 	}
 }
