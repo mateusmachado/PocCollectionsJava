@@ -5,13 +5,13 @@ import java.util.Set;
 
 class RemoveDuplicates {
 	public static void main(String[] args) {
-		String tongueTwister = "I feel, a feel, a funny feel, a funny feel I feel, if you feel the feel I feel, I feel the feel you feel";
+		String reallity = "work hard or go home!";
 		Set<String> words = new HashSet<>();
 
-		for (String word : tongueTwister.split("\\W+"))
+		for (String word : reallity.split("\\W+"))
 			words.add(word);
 
-		System.out.println("The tongue twister is: " + tongueTwister);
+		System.out.println("Reallity: " + reallity);
 		System.out.print("The words used were: ");
 		System.out.println(words);
 	}
