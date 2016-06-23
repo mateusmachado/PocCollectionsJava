@@ -5,7 +5,7 @@ import java.util.Set;
 
 class RemoveDuplicates {
 	public static void main(String[] args) {
-		String reallity = "work hard or go home!";
+		String reallity = "work hard or go home!, work hard, play hard";
 		Set<String> words = new HashSet<>();
 
 		for (String word : reallity.split("\\W+"))
